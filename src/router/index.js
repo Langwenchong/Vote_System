@@ -7,6 +7,8 @@ import Console from '@/Components/Console'
 import account from '@/components/account'
 import messages from '@/components/messages'
 import conmmunication from '@/components/conmmunication'
+import dashBoard from '@/components/dashBoard'
+import settings from '@/components/settings'
 
 Vue.use(Router)
 
@@ -50,6 +52,18 @@ export default new Router({
               path: 'conmmunication',
               name: 'conmmunication',
               component: conmmunication
+            }
+          ]
+        },
+        {
+          path: 'dashBoard',
+          name: 'dashBoard',
+          component: dashBoard,
+          children: [
+            {
+              path: 'settings',
+              name: 'settings',
+              component: settings
             }
           ]
         }

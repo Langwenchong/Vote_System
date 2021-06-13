@@ -100,7 +100,8 @@ export default {
           logo: this.arr[i].avatar,
           title: this.arr[i].name,
           status: this.arr[i].status,
-          mesData: this.arr[i].mesData
+          mesData: this.arr[i].mesData,
+          info: this.arr[i].info
         }
       });
     }
@@ -113,6 +114,7 @@ export default {
           name: "官方小助手",
           avatar: "../../static/images/助手.png",
           status: "官方",
+          info: "官方小助手",
           lastdate: "昨天",
           lastmes: "小主人，有什么需要我帮助您的吗？",
           mesData: [
@@ -164,6 +166,7 @@ export default {
           name: "心理健康测试1群",
           avatar: "../../static/images/团队.png",
           status: "团队",
+          info: "2019级中国地质大学(北京)心理健康测试群",
           lastdate: "4月17日",
           lastmes: "老师：请还没有提交心理测试问卷的同学尽快提交！",
           mesData: [
@@ -194,6 +197,7 @@ export default {
           name: "2019ACM训练群",
           avatar: "../../static/images/团队.png",
           status: "团队",
+          info: "2019级中国地质大学(北京)ACM训练队通知群，禁止水群",
           lastdate: "6月6日",
           lastmes: "杨浩忠：今年银川站必须哪一个金牌！",
           mesData: [
@@ -224,6 +228,7 @@ export default {
           name: "天津大学考研群③群",
           avatar: "../../static/images/团队.png",
           status: "组织",
+          info: "2022天津大学考研经验分享群，任何问题可以咨询夏天学长",
           lastdate: "6月12日",
           lastmes: "夏天学长：901考研资料特惠现在仅卖299.9一套",
           mesData: [
@@ -240,13 +245,14 @@ export default {
               status: "22软工",
               message:
                 "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nam incidunt, eos beatae amet porro quod nisi commodi, corrupti dolorem repudiandae quibusdam, fugiat corporis pariatur inventore nihil placeat explicabo? Cupiditate?"
-            },
+            }
           ]
         },
         {
           name: "西北工业大学夺牌小队",
           avatar: "../../static/images/金牌.png",
           status: "团体",
+          info: "冲冲冲！本小队立志于冲击西北赛区ICPC区域金牌！",
           lastdate: "6月12日",
           lastmes: "曹胜华：明天就要去打比赛了，好紧张呜呜呜",
           mesData: [
@@ -254,16 +260,14 @@ export default {
               avatar: "https://pengpenglang.vip/img/avatar.jpg",
               name: "小鹏鹏",
               status: "队长",
-              message:
-                "明天就要去打比赛了，大佬们我好慌咋办，不会打铁吧！！"
+              message: "明天就要去打比赛了，大佬们我好慌咋办，不会打铁吧！！"
             },
             {
               avatar: "../../static/images/宇航员.png",
               name: "曹胜华",
               status: "cf2000+",
-              message:
-                "你可是队长，你怂个撒子哦🙃~"
-            },
+              message: "你可是队长，你怂个撒子哦🙃~"
+            }
           ]
         }
       ]

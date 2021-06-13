@@ -28,35 +28,35 @@
           </a>
           <span class="tooltip">账号</span>
         </li>
-        <li  @click="transmit(2)">
+        <li @click="transmit(2)">
           <a href="#">
             <i class="bx bx-chat"></i>
             <span class="links_name">消息</span>
           </a>
           <span class="tooltip">消息</span>
         </li>
-        <li  @click="transmit(3)">
+        <li @click="transmit(3)">
           <a href="#">
             <i class="bx bx-grid-alt"></i>
             <span class="links_name">工作台</span>
           </a>
           <span class="tooltip">工作台</span>
         </li>
-        <li  @click="transmit(4)">
+        <li @click="transmit(4)">
           <a href="#">
             <i class="bx bx-pie-chart-alt-2"></i>
             <span class="links_name">分析</span>
           </a>
           <span class="tooltip">分析</span>
         </li>
-        <li  @click="transmit(5)">
+        <li @click="transmit(5)">
           <a href="#">
             <i class="bx bx-pen"></i>
             <span class="links_name">问卷</span>
           </a>
           <span class="tooltip">问卷</span>
         </li>
-        <li  @click="transmit(6)">
+        <li @click="transmit(6)">
           <a href="#">
             <i class="bx bx-cog"></i>
             <span class="links_name">设置</span>
@@ -78,7 +78,7 @@
       </div>
     </div>
     <div id="r-main">
-        <router-view></router-view>
+      <router-view></router-view>
     </div>
   </div>
 </template>
@@ -108,7 +108,7 @@ export default {
       sidebar.classList.toggle("active");
     };
     var date = new Date();
-    var s = "一二三四五六日";
+    var s = "日一二三四五六";
     const h = this.$createElement;
     this.$notify({
       title: "登陆成功✔️",
@@ -130,12 +130,13 @@ export default {
       this.$router.push("/Container/login");
       location.reload();
     },
-    transmit(i){
-      if(i===1){
-        this.$router.push('/Console/account');
-      }
-      else if(i===2){
-        this.$router.push('/Console/messages/conmmunication');
+    transmit(i) {
+      if (i === 1) {
+        this.$router.push("/Console/account");
+      } else if (i === 2) {
+        this.$router.push("/Console/messages/conmmunication");
+      } else if (i === 3) {
+        this.$router.push("/Console/dashBoard/settings");
       }
     }
   }
@@ -391,10 +392,10 @@ export default {
   width: calc(100% - 240px);
   left: 240px;
 }
-#r-main{
-    width:calc(100% - 78px);
-    margin-left:78px;
-    min-height:300px;
-    /* background:#000; */
+#r-main {
+  width: calc(100% - 78px);
+  margin-left: 78px;
+  min-height: 300px;
+  /* background:#000; */
 }
 </style>
