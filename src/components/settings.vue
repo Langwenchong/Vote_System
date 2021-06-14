@@ -95,7 +95,7 @@
         <el-card class="box-card">
           <div v-for="o in 4" :key="o" class="text item">{{'题目' + o +'题型:[单选题] 分值:[2分]'}}</div>
         </el-card>
-        <el-button type="primary">编辑题目</el-button>
+        <el-button type="primary" @click="skip">编辑题目</el-button>
       </div>
     </div>
   </div>
@@ -171,6 +171,9 @@ export default {
     },
     resetForm(formName) {
       this.$refs[formName].resetFields();
+    },
+    skip(){
+      this.$router.push('/Console/edit');
     }
   }
 };

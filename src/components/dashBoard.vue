@@ -28,7 +28,7 @@
           </div>
           <div class="card">
             <div class="icon">
-              <i class="bx bxs-notepad"></i>
+              <i class='bx bxs-quote-left'></i>
             </div>
             <div class="info">
               <div class="num">{{toupiao}}</div>
@@ -186,7 +186,7 @@ export default {
     del(id) {
       for (let i = 0; i < this.arr.length; i++) {
         if (this.arr[i].id === id) {
-          console.log(id);
+          // console.log(id);
           this.arr.splice(i, 1);
         }
       }

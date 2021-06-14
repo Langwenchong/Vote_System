@@ -9,6 +9,7 @@ import messages from '@/components/messages'
 import conmmunication from '@/components/conmmunication'
 import dashBoard from '@/components/dashBoard'
 import settings from '@/components/settings'
+import edit from '@/components/edit'
 
 Vue.use(Router)
 
@@ -66,6 +67,11 @@ export default new Router({
               component: settings
             }
           ]
+        },
+        {
+          path: 'edit',
+          name: ' edit',
+          component: edit
         }
       ]
     }
