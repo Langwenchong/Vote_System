@@ -41,6 +41,25 @@ export default {
         this.$message.error("账号或者密码错误,请重新输入！");
       }
     }
+  },
+  mounted(){
+    var obj={
+      id:"1"
+    }
+    const url=`http://172.23.147.201:8080/api/test/add`;
+    const settings={
+      method:"post",
+      // mode: "no-cors",
+      headers:{
+        "Content-type":"application:/x-www-form-urlencoded:charset=UTF-8"
+      },
+      body:JSON.stringify(obj)
+    }
+    fetch(url)
+    .then(res=>res.json())
+    .then(data=>{
+      console.log(data);
+    })
   }
 };
 </script>
